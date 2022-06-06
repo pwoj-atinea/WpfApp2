@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        xmlns:ddes="http://schemas.devdept.com/winfx/2008/xaml/control"
+        xmlns:ddgr="http://schemas.devdept.com/winfx/2008/xaml/graphics"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ddes:Design  x:Name="dwgView">
+            <ddes:Design.Viewports>
+                <ddes:Viewport InitialView="Top">
+                    <ddes:Viewport.Camera>
+                        <ddes:Camera ProjectionMode="Orthographic"/>
+                    </ddes:Viewport.Camera>
+                    <ddes:Viewport.Background>
+                        <ddgr:BackgroundSettings StyleMode="Solid"  TopColor="White"/>
+                    </ddes:Viewport.Background>
+
+                    <ddes:Viewport.ToolBars>
+                        <ddes:ToolBar Position="VerticalMiddleRight">
+                            <ddes:ToolBar.Buttons>
+                                <ddes:HomeToolBarButton/>
+                                <ddes:ZoomWindowToolBarButton/>
+                                <ddes:ZoomToolBarButton/>
+                                <ddes:PanToolBarButton/>
+                            </ddes:ToolBar.Buttons>
+                        </ddes:ToolBar>
+                    </ddes:Viewport.ToolBars>
+                </ddes:Viewport>
+            </ddes:Design.Viewports>
+        </ddes:Design>
+    </Grid>
+</Window>
